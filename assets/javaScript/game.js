@@ -8,6 +8,7 @@ $(document).ready(function () {
     var enemyArray = "";
     var enemyJedi = "";
     var winCount = 0;
+    var audio = document.getElementById("audio");
 
     $("#startPosition").on('click', 'span', function () {
         var index = $(this).attr("value");
@@ -49,6 +50,13 @@ $(document).ready(function () {
         }
         enemyJedi.healthValue -= attackUserPoints;
         gameBoard.updateLog("User " + playerJedi.name, attackUserPoints);
+       
+        audio.play(); 
+        var delayButtonAlert = setTimeout(function() {
+            audio.pause(); 
+        }, 4000);
+
+
         //Subract from the enemy
         gameBoard.updateGamePlay(playerJedi, enemyJedi);
 
