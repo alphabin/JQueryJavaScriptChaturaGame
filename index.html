@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RPG Game Javascript Chatura</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row" id="startPosition">
+        </div>
+        <div class="row " id="yourCharacter">
+            <h3 id="playerCharacter">Your Character!</h3>
+            <div class="col-md-3 card" id="yourChoise"></div>
+            <div class="col-md-9 hidden-md"></div>
+        </div>
+        <div class="row" id="enemyChoisesArray">
+            <h3 id="enemysArray">Enemy's to select!</h3>
+            <div id="enemyChoiseLeft"></div>
+        </div>
+        <div class="row" id="buttonChoise">
+            <div class="col-md-9 hidden-md"></div>
+            <div class="col-md-3">
+                <button type="button" class="btn btn-outline-primary">Attack</button>
+            </div>
+
+        </div>
+        <div class="row" id="enemyChoise">
+            <h3 id="enemysPlayer">Your Enemy!</h3>
+            <div class="col-md-3 card" id="yourenemyChoise"></div>
+            <div class="col-md-9 hidden-md"></div>
+        </div>
+
+        <div class="row" id="UpdateBar">
+            <h3>Attack Log!</h3>
+            <div class="col-md-3 card" id="updateLog"></div>
+            <div class="col-md-9 hidden-md"></div>
+        </div>
+
+        <div class="row" id="buttonReset">
+            <div class="col-md-9 hidden-md"></div>
+            <div class="col-md-3">
+                <button type="button" id="hiddenButton" class="btn btn-outline-primary">Reset</button>
+            </div>
+
+        </div>
+
+
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="./assets/javaScript/gameBoard.js"></script>
+    <script src="./assets/javaScript/game.js"></script>
+</body>
+
+</html>
