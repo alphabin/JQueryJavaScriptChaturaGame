@@ -45,28 +45,28 @@ var gameBoard = {
     populateStartGame: function () {
         var luke = new Jedi();
         luke.name = "Luke Skywalker";
-        luke.imageURL = "https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pngmart.com%2Ffiles%2F2%2FLuke-Skywalker-PNG-Transparent-Image.png&f=1";
+        luke.imageURL = "./assets/resource/luke.png";
         luke.attackValue = 20;
         luke.healthValue = 180;
         this.jedis.push(luke);
 
         var Darthvadar = new Jedi();
         Darthvadar.name = "Darth Vadar";
-        Darthvadar.imageURL = "https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fpngimg.com%2Fuploads%2Fdarth_vader%2Fdarth_vader_PNG13.png&f=1";
+        Darthvadar.imageURL = "./assets/resource/darth.png";
         Darthvadar.attackValue = 20;
         Darthvadar.healthValue = 200;
         this.jedis.push(Darthvadar);
 
         var JarJar = new Jedi();
         JarJar.name = "Jar Jar";
-        JarJar.imageURL = "https://images.duckduckgo.com/iu/?u=http%3A%2F%2Ffc00.deviantart.net%2Ffs70%2Ff%2F2013%2F284%2F2%2Ff%2Fjar_jar_binks_png_by_biebersays-d6q12yz.png&f=1";
+        JarJar.imageURL = "./assets/resource/jarjar.png";
         JarJar.attackValue = 5;
         JarJar.healthValue = 100;
         this.jedis.push(JarJar);
 
         var Palpatine = new Jedi();
         Palpatine.name = "Palpatine";
-        Palpatine.imageURL = "https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fvignette.wikia.nocookie.net%2Fvsbattles%2Fimages%2F6%2F64%2FDarth_Sidious_Render.png%2Frevision%2Flatest%3Fcb%3D20170810182252&f=1";
+        Palpatine.imageURL = "./assets/resource/palp.png";
         Palpatine.attackValue = 25;
         Palpatine.healthValue = 200;
         this.jedis.push(Palpatine);
